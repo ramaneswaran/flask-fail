@@ -8,6 +8,12 @@ app = Flask(__name__)
 def home():
    return render_template('home.html')
 
+@app.route('/bad')
+def bad():
+   temp;
+   return "Bad"
+
+   
 @app.route('/status')
 def status():
    return jsonify({
