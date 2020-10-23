@@ -8,7 +8,7 @@ app = Flask(__name__)
 def home():
    return render_template('home.html')
 
-@app.route('/staus')
+@app.route('/status')
 def status():
    return jsonify({
       'status': 'up'
